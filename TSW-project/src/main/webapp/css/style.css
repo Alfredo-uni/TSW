@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* "https://fonts.google.com/" lista tutti fonts */
 
 * {
 	margin: 0;
@@ -28,7 +27,7 @@ h4 {
 
 h6 {
 	font-weight: 700;
-	font-size: 12px
+	font-size: 12px;
 }
 
 p {
@@ -42,9 +41,35 @@ p {
 }
 
 .section-m1{
-	margin: 40px 0
+	margin: 40px 0;
 };
 
 body {
-	width: 100%
+	width: 100%;
+}
+
+#header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+	background-color: #cdcaff;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+#navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#navbar li {
+	list-style: none;
+	padding: 0 20px;
+}
+#navbar li a {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color:#6259ff;
 }
