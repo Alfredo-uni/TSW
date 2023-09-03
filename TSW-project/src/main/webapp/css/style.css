@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@link 
+/*@link*/ 
 * {
 	margin: 0;
 	padding: 0;
@@ -78,7 +78,7 @@ body {
 	font-size: 16px;
 	font-weight: 600;
 	color:#6259ff;
-	transition:0.3s ease;
+	transition: 0.3s ease;
 }
 
 #navbar li a:hover,
@@ -86,7 +86,9 @@ body {
 	
 	color:#a39dff;
 }
+
 /*sudo classes "after and before" */
+
 #navbar li a.active::after,
 #navbar li a:hover::after {
 	
@@ -100,6 +102,7 @@ body {
 }
 
 /* Home page */
+
 #hero{
 	background-image: url("../images/hero2.jpg");
 	height: 90vh;
@@ -138,6 +141,7 @@ body {
 	cursor: pointer;
 	
 }
+
 /*Feature*/
 
 #feature {
@@ -150,11 +154,12 @@ body {
 }
 
 /*Feature box*/
+
 #feature .feature-box {
 	width: 180px;
 	text-align: center;
 	padding: 25px 15px;
-	box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+	box-shadow: 20px 20px 34px rgba(0,0,0,0.02);
 	border: 1px solid #cce7d0;
 	border-radius: 4px;
 	margin: 15px 0;
@@ -195,4 +200,85 @@ body {
  #feature .feature-box:nth-child(6) h6{
 	background-color: #fff2e5;
 }
+
+/*Prodotti più venduti*/
+
+ #product1{
+ 	text-align: center;
+}
+
+#product1 .pro-container{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	flex-wrap: wrap;
+}
+
+ #product1 .pro{
+	width: 23%;
+	min-width: 250px;
+	padding: 10px 12px;
+	border: 1px solid #cce7d0;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 20px 20px 30px rgba(0,0,0,0.1);
+	margin: 15px 0;
+	transition: 0.2s ease;
+	position: relative; /*altrimenti l'icona di carrello compare su hero*/
+}
+
+#product1 .pro:hover{
+			box-shadow: 20px 20px 30px rgba(0,0,0,0.3);
+	
+}
+
+
+#product1 .pro img[src="images/Products/proteine-iso.jpg"]{
+	width: 100%;
+	border-radius: 20px;
+}
+
+#product1 .pro .des{
+	text-align: start;
+	padding: 10px 0;
+		
+}
+
+#product1 .pro .des span{
+	color:#a39dff;
+	font-size: 12px;
+}
+
+#product1 .pro .des h5{
+	padding-top: 5px;
+	color:#1a1a1a;
+	font-size: 14px;
+}
+
+#product1 .pro img[src="images/star-solid.svg"]{
+	width: 12px;
+	filter: invert(0.5) sepia(100%) saturate(5) hue-rotate(0deg);
+}
+
+#product1 .pro .des h4 {
+	padding-top: 7px;
+	font-size: 15px;
+	font-weight: 700;
+	color:#a39dff ;
+}
+
+#product1 .pro img[src="images/cart-shopping-solid.svg"] {
+	width: 50px;
+	height: 30px;
+	line-height: 40px;
+	border-radius: 50px;
+	background-color: #e8f6ea;
+	font-weight: 500;
+	color: #a39dff;
+	border: 1px solid #cce7d0;
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+}
+
 
