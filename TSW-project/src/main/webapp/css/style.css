@@ -44,9 +44,7 @@ p {
 	margin: 40px 0;
 };
 
- /*classe globale*/
- 
- button.normal{
+ button.normal {
  	font-size: 14px;
  	font-weight: 600;
  	padding: 15px 30px;
@@ -58,7 +56,6 @@ p {
  	outline: none;
  	transition: 0.2s;
  }  
-   
 
 body {
 	width: 100%;
@@ -336,6 +333,14 @@ body {
    	white-space: nowrap;
  	border-top-left-radius: 0;
   	border-bottom-left-radius: 0;
+  	font-size: 14px;
+ 	font-weight: 600;
+ 	padding: 15px 30px;
+ 	border-radius: 4px;
+ 	cursor: pointer;
+ 	border: none;
+ 	outline: none;
+ 	transition: 0.2s;
  }
    
  #newsletter .form{
@@ -344,18 +349,71 @@ body {
  }
 
    
+/*Footer*/
+
+ footer{
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: space-between;
+ }
    
+ footer .col{
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-content: flex-start;
+ 	margin-bottom: 20px
+ }   
    
+  footer .logo{
+  	margin-bottom: 30px;
+  	width: 150px;
+  }
    
+   footer h4{
+   	font-size: 14px;
+   	padding-bottom: 20px;
+   }
    
+   footer p{
+   	font-size: 13px;
+   	margin: 0 0 8px 0;
+   }   
    
+   footer a{
+   	font-size: 13px;
+   	text-decoration:none;
+   	color: #222;
+   	margin-bottom:10px; 
+   }
    
+    footer .follow{
+   		margin-top: 20px;	
+   }
    
+    footer .follow img{
+   		padding-right: 	4px;
+   		cursor: pointer;
+   		width: 30px;
+   } 
    
+   footer .install .row img{
+   	border:1px solid;
+   	border-radius: 6px;
+   }
    
+   footer .install img{
+      	margin: 10px 0 15px 0;
+      	width: 30px;
+      	cursor: pointer;
+   }
    
+   footer .follow img:hover,
+   footer a:hover,
+   footer .install img:hover{
+   	filter: invert(0.5) sepia(100%) saturate(2) hue-rotate(128deg);
+   }
    
-   
-   
-   
-   
+   footer .copyright{
+   	width: 100%;
+   	text-align: center;
+   	}
